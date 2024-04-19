@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RadioButtonTextStyle">
+        <item name="android:textSize">30dp</item> <!-- Adjust the font size as needed -->
+        <!-- Add more text attributes if desired -->
+    </style>
+</resources>

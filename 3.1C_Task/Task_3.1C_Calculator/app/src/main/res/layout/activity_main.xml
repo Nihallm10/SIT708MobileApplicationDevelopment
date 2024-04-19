@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputvalue1"
+        android:layout_width="79dp"
+        android:inputType="number"
+        android:layout_height="77dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="196dp"
+        android:gravity="center"
+        android:hint="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/resultsub"
+        android:layout_width="118dp"
+        android:layout_height="72dp"
+        android:text="Subtract"
+        app:layout_constraintBottom_toBottomOf="@+id/resultadd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toEndOf="@+id/resultadd"
+        app:layout_constraintTop_toTopOf="@+id/resultadd"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="103dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Result"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultadd" />
+
+    <Button
+        android:id="@+id/resultadd"
+        android:layout_width="118dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="40dp"
+        android:text="Add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputvalue1" />
+
+    <EditText
+        android:id="@+id/inputvalue2"
+        android:layout_width="79dp"
+        android:layout_height="77dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:hint="0"
+        app:layout_constraintBottom_toBottomOf="@+id/inputvalue1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintStart_toEndOf="@+id/inputvalue1"
+        app:layout_constraintTop_toTopOf="@+id/inputvalue1"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
