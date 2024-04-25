@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_gray">#F0F0F0</color> <!-- Example light gray color -->
+    <color name="dark_gray">#333333</color> <!-- Use your desired dark gray color code -->
+    <color name="colorPrimary">#FF5722</color> <!-- Example colorPrimary color -->
+    <color name="colorAccent">#FF4081</color> <!-- Example colorAccent color -->
+
+</resources>

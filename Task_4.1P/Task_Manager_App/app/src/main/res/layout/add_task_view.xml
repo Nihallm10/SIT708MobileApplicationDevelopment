@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/black">
+
+            <EditText
+                android:id="@+id/add_task_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Task Title"
+                android:inputType="textCapSentences"
+                android:textColorHint="#FFEB3B"
+                android:textColor="#FFEB3B"
+                app:boxStrokeColor="#FFEB3B"
+                app:layout_constraintBottom_toTopOf="@+id/add_task_desc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/add_task_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Task Description"
+                android:inputType="textMultiLine"
+                android:textColorHint="#FFEB3B"
+                android:textColor="#FFEB3B"
+                app:boxStrokeColor="#FFEB3B"
+                app:layout_constraintBottom_toTopOf="@+id/add_task_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_task_title" />
+
+            <EditText
+                android:id="@+id/add_task_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Due Date"
+                android:onClick="showDatePickerDialog"
+                android:textColorHint="#FFEB3B"
+                android:textColor="#FFEB3B"
+                app:boxStrokeColor="#FFEB3B"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_task_desc" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

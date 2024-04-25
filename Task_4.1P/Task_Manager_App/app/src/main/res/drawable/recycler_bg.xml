@@ -1,0 +1,6 @@
+<!-- recycler_bg.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="8dp" /> <!-- Adjust the radius for rounded corners -->
+    <solid android:color="@color/light_gray" /> <!-- Background color -->
+</shape>
