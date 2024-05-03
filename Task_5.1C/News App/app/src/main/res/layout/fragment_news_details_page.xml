@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".News_details_page">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- ImageView for the news image -->
+        <ImageView
+            android:id="@+id/imageDetail"
+            android:layout_width="415dp"
+            android:layout_height="370dp"
+            android:src="@drawable/img1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- TextView for the news title -->
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageDetail"
+            android:layout_marginTop="16dp" />
+
+        <!-- TextView for the news description -->
+        <TextView
+            android:id="@+id/detailDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailTitle"
+            android:layout_marginTop="8dp" />
+
+        <!-- TextView as heading for Related Stories -->
+        <TextView
+            android:id="@+id/relatedStoriesHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Related Stories"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detailDescription"
+            android:layout_marginTop="16dp" />
+
+        <!-- RecyclerView for related stories -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/verticalRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/relatedStoriesHeading"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
